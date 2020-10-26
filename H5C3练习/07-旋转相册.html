@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;padding: 0;
+		}
+		body{
+			background: url(img/11.jpg) no-repeat;
+			background-size: 100%;
+		}
+		.content{
+			width: 300px;
+			height: 150px;
+			margin: 50px auto 0px;
+			perspective: 1500px;
+			backface-visibility: hidden;
+
+
+		}
+		.box{
+			width: 300px;
+			height: 150px;
+			position: relative;
+			transform-style: preserve-3d;
+			transform: rotateX(-10deg);
+			animation: mv 10s linear infinite;
+			
+		}
+		.box:hover{
+			animation: mv 10s linear infinite paused;
+		}
+		.box div img:hover{
+			transform: scale(1.1);
+		}
+		.box div{
+			width: 300px;
+			height: 450px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		.box div img{
+			width: 100%;
+			height: 100%;
+		}
+		.box1{
+			transform: translateZ(280px);
+		}
+		.box2{
+			transform: rotateY(60deg) translateZ(280px);
+		}
+		.box3{
+			transform: rotateY(120deg) translateZ(280px);
+		}
+		.box4{
+			transform: rotateY(180deg) translateZ(280px);
+		}
+		.box5{
+			transform: rotateY(240deg) translateZ(280px);
+		}
+		.box6{
+			transform: rotateY(300deg) translateZ(280px);
+		}
+		@keyframes mv{
+			0%{
+				transform: rotateX(-10deg) rotateY(0deg);
+			}
+			100%{
+				transform: rotateX(-10deg) rotateY(360deg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box">
+			<div class="box1"><img src="img/1.jpg"></div>
+			<div class="box2"><img src="img/2.jpg"></div>
+			<div class="box3"><img src="img/3.jpg"></div>
+			<div class="box4"><img src="img/4.jpg"></div>
+			<div class="box5"><img src="img/5.jpg"></div>
+			<div class="box6"><img src="img/6.jpg"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>鱼C-零基础入门学习Web（Html5+Css3）</title>
+    <style>
+        div
+        {
+            position:relative;
+            height:60px;
+            width:60px;
+            background-color:green;
+            transform:rotateY(180deg);
+        }
+        #div1
+        {
+            backface-visibility:hidden;
+        }
+        #div2
+        {
+           backface-visibility:hidden;
+        }
+    </style>
+</head>
+<body>
+    <p>这个例子显示了两个div元素,旋转了180度, 转向远离用户的方向</p>
+    <p>第一个div元素backface-visibility属性设置为 "hidden", 因此应该是看不见的。</p>
+    <div id="div1">DIV 1</div>
+    <div id="div2">DIV 2</div>
+</body>
+</html>
