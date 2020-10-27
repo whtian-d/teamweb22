@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // +
+        console.log(1 + 1); //2
+        console.log(1 + '2'); //'12'
+        console.log('2' + '2'); //'22'
+        console.log(1 + 5 + '8'); //'68'
+        console.log('1' + 2 + '8'); //'128'
+        console.log('1' + '2' + 8); //'128'
+
+        // - * / % (隐式转换-Number)---
+        console.log(3 - 2); //1
+        console.log(3 - '2'); //1
+        console.log('3' - '2'); //1
+        console.log(3 * 2); //6
+        console.log(3 * '2'); //6
+        console.log('3' * '2'); //6
+        // 特殊情况对于运算符来说,浮点型的处理会出现特殊情况
+        console.log(0.1 + 0.2); //0.30000000000000004
+        console.log(0.04 + 0.3); //0.33999999999999997
+        console.log(0.1 * 0.2); //0.020000000000000004
+
+        // %:取余:取出余数
+        console.log(9 % 2); //1
+        // 特殊情况
+        console.log('123abc' - '123'); //NaN
+        // ()
+        console.log(2 * (2 + 3)); //10
+    </script>
+</body>
+
+</html>

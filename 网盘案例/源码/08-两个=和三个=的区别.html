@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ==: 比较是数值相等(隐式转换后)
+        // ===:①数据类型相等②值相等,不进行数据类型的隐式转换
+        // 如果一个是字符串，一个是数值，先把字符串转换成数值之后再进行比较
+        console.log(10 == '10'); //true
+        console.log(10 === '10'); //false
+        console.log(10 === 10); //true
+        var person1 = {
+            uname: '张梦洋',
+            age: 20,
+            sex: '男'
+        };
+        var person2 = {
+            uname: '张梦洋',
+            age: 20,
+            sex: '男'
+        };
+        var person3 = person1;
+
+
+        console.log(person1 == person2); //false
+        console.log(person1 == person3); //true
+    </script>
+</body>
+
+</html>

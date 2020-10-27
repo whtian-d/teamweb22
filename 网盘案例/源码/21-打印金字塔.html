@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        每层中星星的数量 = 当前层数*2 -1。例如当前为第4层，则星星数= 4*2-1=7。
+        每层星星前的空格 = 金字塔层数 – 当前层数。例如当前行数为第3层，则空格数=5-3=2。 -->
+
+    <script>
+        var lev = Number(prompt('请输入金字塔层数:'));
+        // 1.for金字塔的层数--趟数
+        for (var i = 1; i <= lev; i++) {
+            // 2.for:打印空格
+            var blank = lev - i;
+            for (var j = 1; j <= blank; j++) {
+                document.write('&nbsp;');
+            }
+            // 3.for:打印星星
+            var star = i * 2 - 1;
+            for (var k = 1; k <= star; k++) {
+                document.write('*');
+            }
+            document.write('<br>');
+
+        }
+    </script>
+</body>
+
+</html>

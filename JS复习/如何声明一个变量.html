@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var found = false;
+
+var result = (found && undefinedVariable);  //这里会发生错误
+
+alert(result);  //这一行不会执行
+	</script>
+</body>
+</html>

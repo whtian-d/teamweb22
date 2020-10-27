@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ++i i++
+        // --i i--
+        // 1.当自增自减运算,不参与运算时,都是i=i+1;
+        var num1 = 10;
+        // ++num1;
+        num1++;
+        console.log(num1);
+
+        // 2.当自增自减运算符,参与运算时,++在前,先加1,再运算,++在后,先运算,后加1
+        var num2 = 20;
+        var rel;
+        // rel = ++num2;
+        rel = num2++;
+        console.log(rel);
+
+        var num3 = 100;
+        var num4;
+        // num4 = num2 + ++num3; //122
+        num4 = num2 + num3++; //121
+        console.log(num4);
+    </script>
+</body>
+
+</html>

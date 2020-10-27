@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var lev = Number(prompt('请输入直角三角形的层数:'));
+        // lev.length
+        // 1.管的是趟数
+        // for (var i = 1; i <= lev; i++) {
+        //     // 2.每趟打印多少个*
+        //     for (var j = 1; j <= i; j++) {
+        //         document.write('*');
+        //     }
+        //     document.write('<br>');
+
+        // }
+        for (var i = 1; i <= lev; i++) {
+            for (var j = lev; j >= i; j--) {
+                document.write('*');
+            }
+            document.write('<br>');
+
+        }
+        // i=1
+        // j=5 4 3 2 1
+        // i=2
+        // j=5 4 3 2
+    </script>
+</body>
+
+</html>

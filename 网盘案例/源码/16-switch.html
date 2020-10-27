@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // switch case break default
+        // 1.已下单 2.正在配送 3.已签收 4.未购买
+        // var flag = Number(prompt('请输入您购买物品的标号:'));
+        var flag = prompt('请输入您购买物品的标号:');
+        // 整个switch开始
+        switch (flag) {
+            case '1':
+                console.log('已下单');
+                break;
+            case '2':
+                console.log('正在配送');
+                break;
+            case '3':
+                console.log('已签收');
+                break;
+            default:
+                console.log('未找到订单');
+                break;
+        }
+        // 整个switch结束
+
+        // 1.switch表达式的值===case(类型和值都得一样)
+        // default不是必须的
+    </script>
+</body>
+
+</html>

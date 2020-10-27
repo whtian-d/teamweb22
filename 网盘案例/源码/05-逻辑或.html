@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ||:逻辑与(短路与)
+        // ||:逻辑或(短路或)
+        // !:逻辑非
+        // 第一个操作数||第二个操作数
+        // 只要有一个操作数为真,结果就为真
+        console.log(true || true); //true
+        console.log(true || false); //true
+        console.log(false || true); //true
+        console.log(false || false); //false
+        // // 特殊情况
+        // // 如果第一个隐式转换后为true(真),那么返回第一个操作数
+        console.log('hello' || 12); //'hello'
+        console.log('hello' || 0); //'hello'
+        // // 如果第一个隐式转换后为false(假),那么返回第二个操作数
+        console.log('' || 222); //222
+        console.log(0 || null); //null
+
+        var flag = 10;
+        console.log(flag || rel);
+    </script>
+</body>
+
+</html>
